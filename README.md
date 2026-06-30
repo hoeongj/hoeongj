@@ -15,6 +15,8 @@
 브라우저 wire 캡처로 역공학해 붙이고, MCP 표준으로 노출해 웹 · Claude Desktop · ChatGPT
 어디서든 쓸 수 있게 만들었다. k3s에 GitOps로 무중단 배포 · 운영 중이다.
 
+![ssuAI 대시보드 — 학식 · 시설 · 도서관 · 공지 · u-SAINT/LMS 통합](https://raw.githubusercontent.com/hoeongj/ssuAI/main/docs/assets/dashboard.png)
+
 ```
 브라우저 ── /api/*  ───────────────────────────────────┐
         └─ /api/agent/* ─ proxy ─ ssuAgent ─ MCP ───────┤
