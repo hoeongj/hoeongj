@@ -1,0 +1,7 @@
+# AI-assistant local config (not part of the project)
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.claude/
+.codex/
+.DS_Store
