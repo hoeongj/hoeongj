@@ -59,7 +59,7 @@
 폭염·장마 때 지도에 위치만이 아니라 **"지금 앉을 수 있는지·시원한지·붐비는지"** 를 최근 제보로 답하는 생활 생존 지도. **PostGIS**로 전국 공공데이터(공중화장실 5.2만·도서관 3.5천 등)를 반경(`ST_DWithin`)·최근접(kNN `<->`)·bounds로 검색하고, 유효 제보를 최근성 × 신뢰도로 집계한 `survival_score` SQL 뷰로 마커를 3색 랭킹 + 시나리오 2단 재랭킹. 브라우저는 항상 동일 오리진 `/api/*` BFF만 호출(CORS·ALB 제약 동시 회피).
 `Spring Boot 4 · Java 21 · Next.js · PostGIS · Redis · AWS ECS Fargate · Terraform(IaC) · GitHub Actions OIDC · ECR/ALB/CloudFront`
 
-### 🎮 [두근두근 자료구조 (DDSC)](https://github.com/ghdtjdwn/DDSC) — AI 학습 미연시 &nbsp;`공모전`
+### 🎮 두근두근 자료구조 (DDSC) — AI 학습 미연시 &nbsp;`공모전 · 공개 준비 중`
 소꿉친구 지수가 자료구조를 가르치고, 학습자의 **자유서술 답을 AI가 채점**해 호감도가 오르는 비주얼노벨. 문제·정답·대사는 사람이 쓰고 **AI는 채점만** → 잘못 가르칠 위험 0. 호감도·비트 순서·엔딩 등 게임 무결성은 엔진(코드)이 소유해 AI가 오작동해도 안 깨진다. 숭실대 AX 인터랙티브 콘텐츠 공모전 출품작.
 `JavaScript · LLM 채점(Claude/OpenAI, mock 폴백)`
 

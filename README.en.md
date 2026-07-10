@@ -61,7 +61,7 @@ Browser ── /api/* ───────────────────�
 A living survival map that answers not just *"where"* but **"can I sit here right now, is it cool, is it crowded?"** from recent user reports. **PostGIS** indexes nationwide open data (52k public restrooms, 3.5k libraries, …) for radius (`ST_DWithin`), nearest-neighbor (kNN `<->`), and bounds queries; a `survival_score` SQL view aggregates valid reports by recency × trust to rank markers in 3 colors, plus a two-stage scenario re-ranking. The browser only ever calls a same-origin `/api/*` BFF (dodging CORS and ALB constraints at once).
 `Spring Boot 4 · Java 21 · Next.js · PostGIS · Redis · AWS ECS Fargate · Terraform (IaC) · GitHub Actions OIDC · ECR/ALB/CloudFront`
 
-### 🎮 [DDSC](https://github.com/ghdtjdwn/DDSC) — AI-graded Data-Structures Visual Novel &nbsp;`contest`
+### 🎮 DDSC — AI-graded Data-Structures Visual Novel &nbsp;`contest · publishing soon`
 A childhood-friend character teaches a data structure, and **the AI grades the learner's free-text answers**, raising affection. Problems, answers, and dialogue are all human-written — **the AI only grades** → zero risk of teaching something wrong. Game integrity (affection math, beat order, endings) is owned by the engine (code), so it never breaks even if the AI misbehaves. Submitted to Soongsil's AX interactive-content contest.
 `JavaScript · LLM grading (Claude/OpenAI, mock fallback)`
 
