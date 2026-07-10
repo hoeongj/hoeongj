@@ -75,11 +75,11 @@ A mobile app that matches roommates by a weighted lifestyle-compatibility score 
 An accessibility aid that reads a kiosk screen with **EasyOCR** to index tap coordinates, then presses menu items on the user's behalf from **voice commands**. Socket-server design separating input / output / order hubs.
 `Python · speech recognition (STT) · EasyOCR · TTS · screen automation`
 
-### 🎮 DDSC — AI-graded Data-Structures Visual Novel &nbsp;`contest · publishing soon`
+### 🎮 DDSC — AI-graded Data-Structures Visual Novel &nbsp;`contest · team project (private)`
 A childhood-friend character teaches a data structure, and **the AI grades the learner's free-text answers**, raising affection. Problems, answers, and dialogue are all human-written — **the AI only grades** → zero risk of teaching something wrong. Game integrity (affection math, beat order, endings) is owned by the engine (code), so it never breaks even if the AI misbehaves. Submitted to Soongsil's AX interactive-content contest.
 `JavaScript · LLM grading (Claude/OpenAI, mock fallback)`
 
-### 🎓 [Soongsil](https://github.com/hoeongj/Soongsil) — Undergraduate Coursework Portfolio &nbsp;`12 courses`
+### 🎓 [cs-coursework](https://github.com/hoeongj/cs-coursework) — Undergraduate Coursework Portfolio &nbsp;`12 courses`
 Coursework organized by subject: **Systems Programming** (C, ~2,300-line `fdupes`-style dedup tool) · **Programming Languages** (lexer → recursive-descent parser → AST tree-walking interpreter) · **Computer Architecture** (RISC-V disassembler & simulator) · **Artificial Intelligence** (Transformer · ViT · BERT from scratch) · **Algorithms** (move-semantics sorting) · **Networks** (TLS · asyncio · ZeroMQ) and more.
 `C · C++ · Java · Python · PyTorch · Jupyter`
 

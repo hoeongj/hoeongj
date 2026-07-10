@@ -74,11 +74,11 @@
 키오스크 화면을 **EasyOCR**로 읽어 좌표를 인덱싱하고, **음성 명령**으로 메뉴를 대신 눌러주는 접근성 보조 도구. 입력/출력/주문 허브를 분리한 소켓 서버 구조.
 `Python · 음성인식(STT) · EasyOCR · TTS · 화면 자동화`
 
-### 🎮 두근두근 자료구조 (DDSC) — AI 학습 미연시 &nbsp;`공모전 · 공개 준비 중`
+### 🎮 두근두근 자료구조 (DDSC) — AI 학습 미연시 &nbsp;`공모전 · 팀 프로젝트(비공개)`
 소꿉친구 지수가 자료구조를 가르치고, 학습자의 **자유서술 답을 AI가 채점**해 호감도가 오르는 비주얼노벨. 문제·정답·대사는 사람이 쓰고 **AI는 채점만** → 잘못 가르칠 위험 0. 호감도·비트 순서·엔딩 등 게임 무결성은 엔진(코드)이 소유해 AI가 오작동해도 안 깨진다. 숭실대 AX 인터랙티브 콘텐츠 공모전 출품작.
 `JavaScript · LLM 채점(Claude/OpenAI, mock 폴백)`
 
-### 🎓 [Soongsil](https://github.com/hoeongj/Soongsil) — 학부 전공 과제 포트폴리오 &nbsp;`12과목`
+### 🎓 [cs-coursework](https://github.com/hoeongj/cs-coursework) — 학부 전공 과제 포트폴리오 &nbsp;`12과목`
 학부 전공 수업 결과물을 과목별로 정리. **시스템 프로그래밍**(C, ~2,300줄 `fdupes` 류 중복파일 도구) · **프로그래밍 언어론**(렉서 → 재귀하향 파서 → AST 트리워킹 인터프리터) · **컴퓨터 구조**(RISC-V 디스어셈블러·시뮬레이터) · **인공지능**(Transformer·ViT·BERT from scratch) · **알고리즘**(이동 의미론 정렬) · **네트워크**(TLS·asyncio·ZeroMQ) 등.
 `C · C++ · Java · Python · PyTorch · Jupyter`
 
