@@ -1,6 +1,6 @@
 # Hong Seong-ju · Soongsil University, School of Computer Science & Engineering · Backend / Full-stack
 
-**한국어** [README.md](README.md) &nbsp;·&nbsp; **English** (this document) &nbsp;·&nbsp; 🌐 Portfolio site: <https://hoeongj.github.io/codegate-portfolio/>
+**한국어** [README.md](README.md) &nbsp;·&nbsp; **English** (this document) &nbsp;·&nbsp; 🌐 Portfolio site: <https://ghdtjdwn.github.io/codegate-portfolio/>
 
 I **design, build, deploy, and operate** production multi-service systems end to end.
 My flagship work is a **campus AI assistant for Soongsil University** that exposes the school's
@@ -21,16 +21,16 @@ not just answer. Campus systems with no public API documentation were reverse-en
 browser wire captures and exposed over the MCP standard, so it works from the web app, Claude
 Desktop, or ChatGPT alike. Deployed and operated on k3s with GitOps.
 
-![ssuAI dashboard — cafeteria · facilities · library · notices · u-SAINT/LMS integration](https://raw.githubusercontent.com/hoeongj/ssuAI/main/docs/assets/dashboard.png)
+![ssuAI dashboard — cafeteria · facilities · library · notices · u-SAINT/LMS integration](https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/dashboard.png)
 
 ### Services (4 repos = one system)
 
 | Repo | Role | Core stack |
 |---|---|---|
-| **[ssuMCP](https://github.com/hoeongj/ssuMCP)** | MCP server — **52 tools** for campus data & actions | Java 21 · Kotlin · Spring Boot 4 · Spring AI · PostgreSQL/pgvector · Redis/Redisson |
-| **[ssuAI](https://github.com/hoeongj/ssuAI)** | Web client — 5-tab responsive UI (dark mode) + natural-language chatbot | Next.js 16 · TypeScript · TanStack Query · Tailwind/shadcn · Vitest |
-| **[ssuAgent](https://github.com/hoeongj/ssuAgent)** | LangGraph multi-agent — SSE streaming · HITL | Python · LangGraph · FastAPI · multi-provider LLM fallback |
-| **[ssu-ai-service](https://github.com/hoeongj/ssu-ai-service)** | B2B embedding gateway — auth & key-hygiene design, k3s deployment (non-root) | Python · FastAPI |
+| **[ssuMCP](https://github.com/ghdtjdwn/ssuMCP)** | MCP server — **52 tools** for campus data & actions | Java 21 · Kotlin · Spring Boot 4 · Spring AI · PostgreSQL/pgvector · Redis/Redisson |
+| **[ssuAI](https://github.com/ghdtjdwn/ssuAI)** | Web client — 5-tab responsive UI (dark mode) + natural-language chatbot | Next.js 16 · TypeScript · TanStack Query · Tailwind/shadcn · Vitest |
+| **[ssuAgent](https://github.com/ghdtjdwn/ssuAgent)** | LangGraph multi-agent — SSE streaming · HITL | Python · LangGraph · FastAPI · multi-provider LLM fallback |
+| **[ssu-ai-service](https://github.com/ghdtjdwn/ssu-ai-service)** | B2B embedding gateway — auth & key-hygiene design, k3s deployment (non-root) | Python · FastAPI |
 
 <details>
 <summary><b>Architecture</b> (expand)</summary>
@@ -54,7 +54,7 @@ Browser ── /api/* ───────────────────�
 - **Reverse-engineering undocumented systems** — SAP WebDynpro (u-SAINT) and Pyxis (library) reverse-engineered from wire captures. A deliberate **build-vs-buy call**: cut off speculative patching at a fixed point and integrated the proven Rust upstream (rusaint) via UniFFI.
 - **Multi-pod HA + Kafka event pipeline** — real usage is small, but I applied real production operating practices as if serving the whole student body: front/back at replicas=2 (HPA·PDB), stateful MCP sessions pinned per-pod via Traefik cookie stickiness, and tool-call / reservation notifications **split from in-memory onto a Kafka event stream** (fail-open non-blocking producer — requests pass even if the broker is down). Verified with zero-downtime rolling deploys and a **live fail-open drill** (tool calls return HTTP 200 during a broker outage).
 - **Operations & quality (prod)** — zero-downtime GitOps rollout via ArgoCD Image Updater, Helm, GitHub Actions (SHA-pinned actions), Testcontainers + JaCoCo coverage gate, OpenTelemetry/Grafana observability (RED · Kafka dashboards · Prometheus alert rules), gitleaks · pod-security hardening. *Lab/experimental: Cilium eBPF FQDN egress (kind lab), n8n ops automation.*
-- **Debugging log** → [Troubleshooting highlights](https://github.com/hoeongj/ssuMCP/blob/main/docs/troubleshooting-highlights.md): major cases, each written up as *wrong hypothesis → actual cause → fix*.
+- **Debugging log** → [Troubleshooting highlights](https://github.com/ghdtjdwn/ssuMCP/blob/main/docs/troubleshooting-highlights.md): major cases, each written up as *wrong hypothesis → actual cause → fix*.
 
 `Java 21` · `Kotlin` · `Spring Boot 4` · `Spring AI` · `Python` · `LangGraph` · `FastAPI` · `TypeScript` · `Next.js 16`
 `PostgreSQL` · `pgvector` · `Redis / Redisson` · `Kafka` · `k3s` · `ArgoCD` · `Helm` · `GitHub Actions` · `Grafana` · `Testcontainers`
@@ -63,7 +63,7 @@ Browser ── /api/* ───────────────────�
 
 ## 📂 Other Projects
 
-### 🗺️ [Geuneul](https://github.com/hoeongj/geuneul) — Summer Survival Map &nbsp; 🟢 [Live](https://geuneul.vercel.app)
+### 🗺️ [Geuneul](https://github.com/ghdtjdwn/geuneul) — Summer Survival Map &nbsp; 🟢 [Live](https://geuneul.vercel.app)
 A living survival map that answers not just *"where"* but **"can I sit here right now, is it cool, is it crowded?"** from recent user reports. **PostGIS** indexes nationwide open data (52k public restrooms, 3.5k libraries, …) for radius (`ST_DWithin`), nearest-neighbor (kNN `<->`), and bounds queries; a `survival_score` SQL view aggregates valid reports by recency × trust to rank markers in 3 colors, plus a two-stage scenario re-ranking. The browser only ever calls a same-origin `/api/*` BFF (dodging CORS and ALB constraints at once).
 `Spring Boot 4 · Java 21 · Next.js · PostGIS · Redis · AWS ECS Fargate · Terraform (IaC) · GitHub Actions OIDC · ECR/ALB/CloudFront`
 
@@ -79,7 +79,7 @@ An accessibility aid that reads a kiosk screen with **EasyOCR** to index tap coo
 A childhood-friend character teaches a data structure, and **the AI grades the learner's free-text answers**, raising affection. Problems, answers, and dialogue are all human-written — **the AI only grades** → zero risk of teaching something wrong. Game integrity (affection math, beat order, endings) is owned by the engine (code), so it never breaks even if the AI misbehaves. Submitted to Soongsil's AX interactive-content contest.
 `JavaScript · LLM grading (Claude/OpenAI, mock fallback)`
 
-### 🎓 [cs-coursework](https://github.com/hoeongj/cs-coursework) — Undergraduate Coursework Portfolio &nbsp;`12 courses`
+### 🎓 [cs-coursework](https://github.com/ghdtjdwn/cs-coursework) — Undergraduate Coursework Portfolio &nbsp;`12 courses`
 Coursework organized by subject: **Systems Programming** (C, ~2,300-line `fdupes`-style dedup tool) · **Programming Languages** (lexer → recursive-descent parser → AST tree-walking interpreter) · **Computer Architecture** (RISC-V disassembler & simulator) · **Artificial Intelligence** (Transformer · ViT · BERT from scratch) · **Algorithms** (move-semantics sorting) · **Networks** (TLS · asyncio · ZeroMQ) and more.
 `C · C++ · Java · Python · PyTorch · Jupyter`
 
@@ -87,10 +87,10 @@ Coursework organized by subject: **Systems Programming** (C, ~2,300-line `fdupes
 <summary>🌱 Others (early learning · collaboration utilities)</summary>
 
 - [**RedbeanOverflow**](https://github.com/kwon32/RedbeanOverflow) — Vocabulary test-sheet automation (collaboration). Turns a NeungyuleVOCA `.docx` + HWP template into an answer key and a seeded fill-in-the-blank `.hwpx` test sheet. `Python`
-- [**firstStudy**](https://github.com/hoeongj/firstStudy) — Member-management CRUD REST API (Spring Boot · JPA · Bean Validation · Swagger). Early Spring project.
+- [**firstStudy**](https://github.com/ghdtjdwn/firstStudy) — Member-management CRUD REST API (Spring Boot · JPA · Bean Validation · Swagger). Early Spring project.
 
 </details>
 
 ---
 
-📫 **Hong Seong-ju** · [@hoeongj](https://github.com/hoeongj) · akftjdwn@gmail.com &nbsp;·&nbsp; 🌐 [Portfolio site](https://hoeongj.github.io/codegate-portfolio/)
+📫 **Hong Seong-ju** · [@ghdtjdwn](https://github.com/ghdtjdwn) · akftjdwn@gmail.com &nbsp;·&nbsp; 🌐 [Portfolio site](https://ghdtjdwn.github.io/codegate-portfolio/)
