@@ -48,7 +48,7 @@
 ### 엔지니어링 하이라이트
 
 - **멀티클라이언트 안전 인증** — 공개/인증 도구를 분리하고 OAuth(Auth0 DCR로 ChatGPT 커넥터 지원) + classic 2-모드. *요청 → 세션 → 클라이언트* 3단계로 세션을 해소해, 웹·Claude Desktop·ChatGPT를 오가도 인증 컨텍스트가 섞이지 않는다.
-- **정확한 규정 답변 (하이브리드 RAG)** — 학칙·졸업·장학 답을 근거 문서와 함께 제시(lexical + 벡터 임베딩 **RRF 융합**, pgvector ANN prod 라이브, Testcontainers IT 실증). 무료 임베딩 quota가 *요청 수가 아니라 분당 토큰(TPM)*에 걸린다는 걸 실측하고, resume 가능한 증분 저장으로 나눠 quota 안에서 전체 코퍼스를 완성했다.
+- **정확한 규정 답변 (하이브리드 RAG)** — 학칙·졸업·장학 답을 근거 문서와 함께 제시(lexical + 벡터 임베딩 **RRF 융합**). prod에는 pgvector 확장·HNSW·벡터 데이터를 준비했지만 217청크 규모에서는 인메모리 exact cosine이 더 단순하고 충분해 라이브 서빙은 그대로 유지했다. 무료 임베딩 quota를 실측하고 resume 가능한 증분 저장으로 전체 코퍼스를 완성했다.
 - **HITL 예약 에이전트** — 도서관 좌석 예약은 `prepare → 사용자 승인 → confirm` 2단계로만 실행. 동기 타임아웃과 비동기 워커의 이중 상태를 **단일 진실원천 + 멱등 finalize**로 정합화.
 - **문서 없는 시스템 역공학** — SAP WebDynpro(u-SAINT)·Pyxis(도서관)를 wire 캡처로 역공학. 추측성 수정을 일정 시점에 끊고 검증된 Rust upstream(rusaint)을 UniFFI로 통합한 **빌드 vs 도입 판단**.
 - **멀티포드 HA + Kafka 이벤트 파이프라인** — 실사용 규모는 작지만, 전교생 규모를 가정해 프로덕션 운영 관행을 그대로 적용했다. 프론트/백엔드 replicas=2(HPA·PDB), stateful MCP 세션은 Traefik 쿠키 sticky로 포드 고정, 툴콜·예약 알림을 인메모리에서 **Kafka 이벤트 스트림으로 분리**(fail-open 비차단 프로듀서 — 브로커가 죽어도 요청은 통과). 롤링 배포 무중단 + **라이브 fail-open 드릴**(브로커 다운 중에도 툴콜 HTTP200)로 검증.
