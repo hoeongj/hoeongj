@@ -29,16 +29,15 @@
 
 <p>
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
   <img alt="PostGIS" src="https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white" />
   <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
   <img alt="Kafka" src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
 </p>
 
 <p>
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="k3s" src="https://img.shields.io/badge/k3s-FFC61C?style=flat-square&logo=k3s&logoColor=111827" />
+  <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
   <img alt="Argo CD" src="https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white" />
   <img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" />
   <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" />
@@ -53,7 +52,7 @@
 A four-service system connecting u-SAINT, LMS, library, and public campus data to a web application,
 a natural-language agent, and standard MCP tools. I designed boundaries for authentication,
 per-user state, approval-gated write operations, and external-system failures, and operate the
-system with GitOps on ARM64 k3s.
+system with GitOps on an ARM64 Kubernetes cluster.
 
 | Service | Responsibility | Links |
 | --- | --- | --- |
@@ -64,21 +63,12 @@ system with GitOps on ARM64 k3s.
 
 [Read the case study with architecture and operational evidence](https://seongju.vercel.app/en/projects/ssu-platform/)
 
-### More projects
-
-| Project | My scope | Links |
-| --- | --- | --- |
-| Geuneul | PostGIS spatial search, idempotent ETL, Spring/Next.js services, and AWS IaC | [Live](https://geuneul.vercel.app) · [Repository](https://github.com/ghdtjdwn/geuneul) · [Case study](https://seongju.vercel.app/en/projects/geuneul/) |
-| Cham Domi | Full mobile web application and roommate-matching backend. Authentication and dormitory eligibility were teammate-owned | [Case study](https://seongju.vercel.app/en/projects/con-dorm/) |
-| UNITHON Macro | Voice-order client and closed-loop UIA/OCR automation for source-inaccessible kiosks | [Repository](https://github.com/UNITHON24/Macro) · [Case study](https://seongju.vercel.app/en/projects/unithon-macro/) |
-
 <hr />
 
-## 🎓 Education & Certifications
+## 📜 Certifications
 
-- Soongsil University — Computer Science & Engineering
-- Computer Specialist in Spreadsheet & Database, Level II
-- Craftsman Information Processing
+- 컴퓨터활용능력 2급 (Computer Specialist in Spreadsheet & Database Level-2)
+- 정보처리기능사 (Craftsman Information Processing)
 
 <hr />
 
@@ -91,14 +81,6 @@ system with GitOps on ARM64 k3s.
 </p>
 
 <hr />
-
-## 🟡 Contribution Arcade
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghdtjdwn/ghdtjdwn/output/pacman-contribution-graph-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ghdtjdwn/ghdtjdwn/output/pacman-contribution-graph.svg" />
-  <img width="100%" alt="Pac-Man animation generated from Hong Seong Ju's GitHub contributions" src="https://raw.githubusercontent.com/ghdtjdwn/ghdtjdwn/output/pacman-contribution-graph.svg" />
-</picture>
 
 <p align="center">
   <a href="https://seongju.vercel.app/en/">Portfolio</a> ·
