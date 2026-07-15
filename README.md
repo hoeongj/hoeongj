@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://seongju.vercel.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-seongju.vercel.app-F59E0B?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="mailto:akftjdwn@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-akftjdwn%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:seongjuice999@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-seongjuice999%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://solved.ac/profile/akftjdwn"><img alt="solved.ac" src="https://img.shields.io/badge/solved.ac-akftjdwn-17CE3A?style=for-the-badge" /></a>
   <a href="./README.en.md"><img alt="English" src="https://img.shields.io/badge/README-English-334155?style=for-the-badge" /></a>
 </p>
@@ -94,5 +94,5 @@ u-SAINT, LMS, 도서관과 교내 공개 데이터를 웹, 자연어 에이전�
 
 <p align="center">
   <a href="https://seongju.vercel.app">Portfolio</a> ·
-  <a href="mailto:akftjdwn@gmail.com">akftjdwn@gmail.com</a>
+  <a href="mailto:seongjuice999@gmail.com">seongjuice999@gmail.com</a>
 </p>

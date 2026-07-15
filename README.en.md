@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://seongju.vercel.app/en/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-seongju.vercel.app-F59E0B?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="mailto:akftjdwn@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-akftjdwn%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:seongjuice999@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-seongjuice999%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://solved.ac/profile/akftjdwn"><img alt="solved.ac" src="https://img.shields.io/badge/solved.ac-akftjdwn-17CE3A?style=for-the-badge" /></a>
   <a href="./README.md"><img alt="Korean" src="https://img.shields.io/badge/README-한국어-334155?style=for-the-badge" /></a>
 </p>
@@ -97,5 +97,5 @@ system with GitOps on ARM64 k3s.
 
 <p align="center">
   <a href="https://seongju.vercel.app/en/">Portfolio</a> ·
-  <a href="mailto:akftjdwn@gmail.com">akftjdwn@gmail.com</a>
+  <a href="mailto:seongjuice999@gmail.com">seongjuice999@gmail.com</a>
 </p>
