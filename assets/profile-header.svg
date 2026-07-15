@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">Hong Seong Ju — Backend, Platform, and AI Systems</title>
+  <desc id="description">A dark navy profile banner with amber highlights and a connected-system motif.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#94a3b8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" rx="22" fill="url(#background)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
+  <path d="M0 252 C240 190 408 292 644 242 C858 197 990 220 1200 164 L1200 300 L0 300 Z" fill="#020617" fill-opacity="0.48"/>
+  <path d="M0 266 C218 211 432 297 660 254 C891 210 1022 242 1200 201" fill="none" stroke="url(#accent)" stroke-opacity="0.55" stroke-width="2"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M930 152 L1000 98 L1082 132 L1135 78" stroke="#94a3b8" stroke-opacity="0.7" stroke-width="3"/>
+    <path d="M930 152 L1018 202 L1082 132" stroke="#94a3b8" stroke-opacity="0.7" stroke-width="3"/>
+    <path d="M1000 98 L1018 202 L1114 224" stroke="#94a3b8" stroke-opacity="0.7" stroke-width="3"/>
+    <circle cx="930" cy="152" r="9" fill="#fbbf24" stroke="#fbbf24"/>
+    <circle cx="1000" cy="98" r="7" fill="#38bdf8" stroke="#38bdf8"/>
+    <circle cx="1018" cy="202" r="8" fill="#fb7185" stroke="#fb7185"/>
+    <circle cx="1082" cy="132" r="11" fill="#f97316" stroke="#f97316"/>
+    <circle cx="1114" cy="224" r="6" fill="#a78bfa" stroke="#a78bfa"/>
+    <circle cx="1135" cy="78" r="7" fill="#34d399" stroke="#34d399"/>
+  </g>
+
+  <rect x="72" y="62" width="78" height="7" rx="3.5" fill="url(#accent)"/>
+  <text x="72" y="135" fill="#f8fafc" font-family="Inter, Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="54" font-weight="750" letter-spacing="-1">Hong Seong Ju</text>
+  <text x="75" y="180" fill="#cbd5e1" font-family="Inter, Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="500" letter-spacing="3">BACKEND  ·  PLATFORM  ·  AI SYSTEMS</text>
+  <text x="75" y="221" fill="#94a3b8" font-family="Inter, Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17">From data and APIs to deployment, observability, and recovery.</text>
+</svg>
