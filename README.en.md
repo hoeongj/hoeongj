@@ -9,17 +9,15 @@
   <a href="./README.md"><img alt="Korean" src="https://img.shields.io/badge/README-한국어-334155?style=for-the-badge" /></a>
 </p>
 
-## Hello
+<div align="center">
+  <h2>Backend · Platform · AI Systems</h2>
+  <p>Soongsil University · Computer Science & Engineering</p>
+  <p>I build systems whose constraints, decisions, and verified results are explainable.</p>
+</div>
 
-I study Computer Science & Engineering at Soongsil University and build backend, platform, and AI
-systems. My work connects data ingestion and APIs with deployment, observability, and recovery
-rather than stopping at application code.
+<hr />
 
-I value engineering that makes the problem, constraints, decisions, and verified results
-explainable. I am currently looking for an entry-level or junior backend, platform, or AI backend
-role.
-
-## Tech Stack
+## 🧑‍💻 Tech Stack
 
 <p>
   <img alt="Java" src="https://img.shields.io/badge/Java-0F172A?style=flat-square&logo=openjdk&logoColor=white" />
@@ -47,7 +45,9 @@ role.
   <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" />
 </p>
 
-## Featured Projects
+<hr />
+
+## 🚀 Featured Projects
 
 ### Soongsil Campus AI Platform
 
@@ -73,13 +73,17 @@ system with GitOps on ARM64 k3s.
 | Cham Domi | Full mobile web application and roommate-matching backend. Authentication and dormitory eligibility were teammate-owned | [Case study](https://seongju.vercel.app/en/projects/con-dorm/) |
 | UNITHON Macro | Voice-order client and closed-loop UIA/OCR automation for source-inaccessible kiosks | [Repository](https://github.com/UNITHON24/Macro) · [Case study](https://seongju.vercel.app/en/projects/unithon-macro/) |
 
-## Education & Certifications
+<hr />
+
+## 🎓 Education & Certifications
 
 - Soongsil University — Computer Science & Engineering
 - 컴퓨터활용능력 2급 (Computer Specialist in Spreadsheet & Database, Level II)
 - 정보처리기능사 (Craftsman Information Processing)
 
-## Algorithm
+<hr />
+
+## 🏆 Algorithm
 
 <p align="center">
   <a href="https://solved.ac/profile/akftjdwn">
@@ -87,7 +91,9 @@ system with GitOps on ARM64 k3s.
   </a>
 </p>
 
-## Contribution Arcade
+<hr />
+
+## 🟡 Contribution Arcade
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghdtjdwn/ghdtjdwn/output/pacman-contribution-graph-dark.svg" />
