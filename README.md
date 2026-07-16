@@ -61,6 +61,18 @@ system with GitOps on an ARM64 Kubernetes cluster.
 | ssuAgent | LangGraph routing, SSE, and HITL | [Repository](https://github.com/ghdtjdwn/ssuAgent) |
 | ssu-ai-service | Isolated embedding-request gateway | [Repository](https://github.com/ghdtjdwn/ssu-ai-service) |
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/dashboard.png" width="100%" alt="ssuAI home dashboard with a daily briefing and customizable campus widgets" />
+</p>
+
+| Academics | Library |
+| --- | --- |
+| ![Graduation progress, cumulative grades, chapel, scholarships, and LMS assignments](https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/dashboard-academic.png) | ![Real-time reading-room availability, current loans, and book search](https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/dashboard-library.png) |
+
+| Campus | Service connections |
+| --- | --- |
+| ![Dining, notices, academic dates, and facility search](https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/dashboard-campus.png) | ![Connection status for u-SAINT, LMS, and the library](https://raw.githubusercontent.com/ghdtjdwn/ssuAI/main/docs/assets/service-connections.png) |
+
 [Read the case study with architecture and operational evidence](https://seongju.vercel.app/en/projects/ssu-platform/)
 
 <hr />
